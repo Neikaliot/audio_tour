@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.top{
+    width:100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(pexels-tu-nguyen-477344610-15818869.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 64px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+nav ul{
+    margin-left: 900px;
+    display: flex;
+}
+
+nav ul a{
+    color:white;
+    font-size:1.6rem;
+    margin-right: 2rem;
+
+}
+nav ul :hover{
+    color: darkgray;
+    font-weight: bolder;
+}
+
+.hero-text{
+    padding-top: 15%;
+}
+
+.hero-text p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.logo{
+    font-size:5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.p2{
+    font-size:1.5rem;
+    font-weight: lighter;
+    color: gray;
+}
+
+.dscrpt{
+    font-size:1.5rem;
+    color: lightgray;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-size: 1.5rem;
+    background: #712212;
+    color: darkgrey;
+    text-decoration: none;
+}
