@@ -7,7 +7,7 @@
 
 .top{
     width:auto;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(pexels-tu-nguyen-477344610-15818869.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(https://images.pexels.com/photos/15818869/pexels-photo-15818869/free-photo-of-gi-a-dong-d-i.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center;
     background-size: cover;
     min-height:100vh ;
