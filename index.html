@@ -8,8 +8,7 @@
 <link rel="stylesheet" href="style.css">
 <body>
     <div class="wrapper">
-        <div class="top">
-            <nav class="hero">
+        <nav class="hero">
                 <ul class="topnav">
                     <li class="hideOnMobile"><a href="#">History</a></li>
                     <li class="hideOnMobile"><a href="#">Culture</a></li>
@@ -24,7 +23,8 @@
                     <li><a href="#">Areas</a></li>
                     <li><a href="#about">About us</a></li>
                 </ul>
-            </nav>
+        </nav>
+        <div class="top">
             <div class="hero-text">
                     <p class="logo">HA NOI</p>
                     <p class="p2">______________________________</p>
@@ -100,14 +100,6 @@
             sidebar.style.display='none'
         }
 
-        $(window).scroll(function(){
-            if($(window).scrollTop()){
-                $("nav").addClass("black");
-            }
-            else{
-                $("nav").removeClass("black");
-            }
-        });
 
         document.getElementById('learnMoreButton').addEventListener('click', () => {
             document.getElementById('extraContent').classList.toggle('hidden');
@@ -168,6 +160,13 @@ pairs.forEach(pair => {
       });
     });
     </script>
+     <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector(".topnav");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
 
     <footer class="footer">
     <div class="footer-content">
