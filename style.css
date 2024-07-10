@@ -5,31 +5,40 @@
     text-decoration: none;
 }
 
+}
+.wrapper{
+    position: relative;
+}
+
 .top{
     width:auto;
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(https://images.pexels.com/photos/15818869/pexels-photo-15818869/free-photo-of-gi-a-dong-d-i.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center;
     background-size: cover;
     min-height:100vh ;
-    position: relative;
 }
 
 nav{
-    min-height: 12vh;
-    position:sticky;
     top:0;
-    transition: 1s;
+    transition: 0.6s;
 }
-
+.topnav.sticky{
+    background-color: black;
+}
 nav ul{
     list-style-type: none;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    position: relative;
     display: flex;
 }
 .topnav{
-    padding:10px 10px 10px;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 12vh;
+    align-items: center;
+    margin: 0;
 }
 
 nav ul a{
@@ -79,40 +88,6 @@ nav ul :hover{
     font-size:1.5rem;
     color: lightgray;
 }
-img{
-    display: block;
-    max-width: 100%;
-}
-.box1{
-    width: auto;
-    height:10vh;
-    background-color: gray;
-}
-.box2{
-    width: auto;
-    height:10vh;
-    background-color: blue;
-}
-.box3{
-    width: auto;
-    height:10vh;
-    background-color: tomato;
-}
-.box4{
-    width: auto;
-    height:10vh;
-    background-color: gray;
-}
-.box5{
-    width: auto;
-    height:10vh;
-    background-color: greenyellow;
-}
-.box6{
-    width: auto;
-    height:200px;
-    background-color: gray;
-}
 
 .sidenav{
     position: fixed;
@@ -120,7 +95,7 @@ img{
     right: 0;
     height: 100vh;
     width: 250px;
-    z-index: 999;
+    z-index: 1000000;
     background-color: black;
     display:none;
     flex-direction: column;
@@ -141,7 +116,6 @@ img{
 .menu-button{
     display: none;
 }
-
 .background {
     min-height: 40vh;
     width: 100%;
@@ -257,9 +231,9 @@ img{
     .menu-button{
         display:block;
     }
-    nav.black{
-        display: none;
-    } 
+    .topnav.sticky{
+        background-color: transparent;
+    }
 }
 @media(max-width:450px){
     .sidebar{
