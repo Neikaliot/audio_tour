@@ -26,12 +26,14 @@
         </nav>
         <div class="top">
             <div class="hero-text">
-                    <p class="logo">HA NOI</p>
-                    <p class="p2">______________________________</p>
-                    <p class="dscrpt">Get to know everything about the capital city of Viet Nam</p>
+                <p class="logo">HA NOI</p>
+                <p class="p2">______________________________</p>
+                <p class="dscrpt">Unveiling Hanoi at your own pace! Explore the vibrant capital of Vietnam with our free audio tour website. Immerse yourself in the rich history, bustling markets, and hidden gems of this captivating city. Listen to engaging commentary from local guides, all accessible right from your phone or device. Start your Hanoi adventure today!
+                </p>
+                <button class="herobutton"><a href="#culture">GET STARTED</a></button>
             </div>
         </div>
-        <div class="background">
+        <!--<div class="background">
             <div class="content">
                 <h1>Vietnam's Cultural Heritage</h1>
                 <button id="learnMoreButton">Want to learn more?</button>
@@ -49,36 +51,41 @@
                 </div>
             </div>
         </div>
-        <audio id="audioPlayer" src="/audio2/rumo-ao-sol-13162.mp3"></audio>
+        <audio id="audioPlayer" src="/audio2/rumo-ao-sol-13162.mp3"></audio>-->
         
         <div class="backgroundkec" id="areas">
-            <div class="container">
-                <h1>Hanoi Map</h1>
-                <div class="longbien district" id="longbienbox" onclick="showAlert()"></div>
-                <div class="popup-box" id="longbienpopup">Long Bien</div>
-                <div class="caugiay district" id="caugiaybox" onclick="showAlert()"></div>
-                <div class="popup-box" id="caugiaypopup">Cau Giay</div>
-                <div class="tayho district" id="tayhobox" onclick="showAlert()"></div>
-                <div class="popup-box" id="tayhopopup">Tay Ho</div>
-                <div class="hadong district" id="hadongbox" onclick="showAlert()"></div>
-                <div class="popup-box" id="hadongpopup">Ha Dong</div>
-                <div class="thanhxuan district" id="thanhxuanbox" onclick="showAlert()"></div>
-                <div class="popup-box" id="thanhxuanpopup">Thanh Xuan</div>
-                <div class="haibatrung district" id="haibatrungbox" onclick="showAlert()"></div>
-                <div class="popup-box" id="haibatrungpopup">Hai Ba Trung</div>
-                <div class="dongda district" id="dongdabox" onclick="showAlert()"></div>
-                <div class="popup-box" id="dongdapopup">Dong Da</div>
-                <div class="badinh district" id="badinhbox" onclick="showAlert()"></div>
-                <div class="popup-box" id="badinhpopup">Ba Dinh</div>
-                <div class="hoankiem district" id="hoankiembox" onclick="showAlert()"></div>
-                <div class="popup-box" id="hoankiempopup">Hoan Kiem</div>
-                <div class="hoangmai district" id="hoangmaibox" onclick="showAlert()"></div>
-                <div class="popup-box" id="hoangmaipopup">Hoang Mai</div>
-                <div class="namtuliem district" id="namtuliembox" onclick="showAlert()"></div>
-                <div class="popup-box" id="namtuliempopup">Nam Tu Liem</div>
-                <div class="bactuliem district" id="bactuliembox" onclick="showAlert()"></div>
-                <div class="popup-box" id="bactuliempopup">Bac Tu Liem</div>
+            <div class="biggercontainer">
+                <h1 id="maptitle">Hanoi Map</h1>
+                <p id="line">_________________</p>
+                <div class="container">
+                    <div class="longbien district" id="longbienbox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="longbienpopup">Long Bien</div>
+                    <div class="caugiay district" id="caugiaybox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="caugiaypopup">Cau Giay</div>
+                    <div class="tayho district" id="tayhobox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="tayhopopup">Tay Ho</div>
+                    <div class="hadong district" id="hadongbox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="hadongpopup">Ha Dong</div>
+                    <div class="thanhxuan district" id="thanhxuanbox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="thanhxuanpopup">Thanh Xuan</div>
+                    <div class="haibatrung district" id="haibatrungbox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="haibatrungpopup">Hai Ba Trung</div>
+                    <div class="dongda district" id="dongdabox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="dongdapopup">Dong Da</div>
+                    <div class="badinh district" id="badinhbox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="badinhpopup">Ba Dinh</div>
+                    <div class="hoankiem district" id="hoankiembox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="hoankiempopup">Hoan Kiem</div>
+                    <div class="hoangmai district" id="hoangmaibox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="hoangmaipopup">Hoang Mai</div>
+                    <div class="namtuliem district" id="namtuliembox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="namtuliempopup">Nam Tu Liem</div>
+                    <div class="bactuliem district" id="bactuliembox" onclick="showAlert()"></div>
+                    <div class="popup-box" id="bactuliempopup">Bac Tu Liem</div>
+                </div>
+                <p id="howto">Hover over a district to see its name</p>
             </div>
+            
         </div>
     </div>
     
@@ -101,7 +108,7 @@
         }
 
 
-        document.getElementById('learnMoreButton').addEventListener('click', () => {
+        /*document.getElementById('learnMoreButton').addEventListener('click', () => {
             document.getElementById('extraContent').classList.toggle('hidden');
         });
 
@@ -117,7 +124,7 @@
                 audioButton.textContent = '▶️';
             }
     
-});
+        });*/
 
 const pairs = [
       { boxId: 'longbienbox', popupId: 'longbienpopup' },
