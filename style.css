@@ -10,7 +10,14 @@ html {
 .wrapper{
     position: relative;
 }
-
+@font-face {
+    font-family: lemonmilk;
+    src: url(/font/LEMONMILK-Light.otf);
+}
+@font-face {
+    font-family: hanoipho;
+    src: url(/font/DVN-HaNoiPho.ttf);
+}
 .top{
     width:auto;
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(https://images.pexels.com/photos/15818869/pexels-photo-15818869/free-photo-of-gi-a-dong-d-i.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -71,14 +78,16 @@ nav ul :hover{
 }
 
 .hero-text p{
-    padding: 0 30px;
+    
     display: flex;
     text-decoration: none;
 }
 .logo{
-    font-size: 8rem;
+    font-size: 8vw;
     font-weight: bold;
     color: white;
+    font-family: hanoipho;
+    letter-spacing: 1.2vw;
     
 }
 
@@ -88,14 +97,15 @@ nav ul :hover{
     color: gray;
     text-align: center;
     height: 2vw;
+    padding-bottom: 2vw;
 }
 
 .dscrpt{
-    font: size 0.2em;
+    font-size: 1rem;
     color: lightgray;
     font-weight: 50;
-    width: 30vw;
-    text-align: justify;
+    text-align: center;
+    font-family: lemonmilk;
 }
 
 .herobutton{
@@ -263,7 +273,9 @@ nav ul :hover{
     .hero-text .dscrpt{
         width: 50vw;
     }
-
+    .p2 {
+        display: none !important;
+    }
 }
 @media(max-width:450px){
     .sidenav{
@@ -325,6 +337,7 @@ nav ul :hover{
 
 #maptitle {
     font-size: 3rem;
+    font-family: lemonmilk;
 }
 #line{
     color: black;
@@ -332,9 +345,17 @@ nav ul :hover{
     opacity: 15%;
     font-size: 1rem;
 }
-#howto {
-    font-size: 1.5rem;
+.howto {
+    width: 50vw;
+
 }
+#howto {
+    font-size: 1rem;
+    font-family: lemonmilk;
+    text-align: center;
+    letter-spacing: 0.1vw;
+}
+
 .district {
     background-color: gray;
     font-family: Arial, Helvetica, sans-serif;
@@ -448,11 +469,12 @@ nav ul :hover{
     bottom: 58.25%;
 }
 .popup-box {
-    width: 100px;
+    width: 110px;
     height: 30px;
     background-color: rgb(36, 36, 36);
     color: white;
-    
+    font-family: lemonmilk;
+    font-size: 0.8rem;
     border-radius: 3px;
     position: absolute;
     display: none;
