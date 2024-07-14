@@ -12,11 +12,11 @@ html {
 }
 @font-face {
     font-family: lemonmilk;
-    src: url('https://raw.githubusercontent.com/Neikaliot/audio_tour/main/font/DVN-HaNoiPho.ttf') format('truetype');
+    src: url(https://raw.githubusercontent.com/Neikaliot/audio_tour/main/font/DVN-HaNoiPho.ttf) format('truetype');
 }
 @font-face {
     font-family: hanoipho;
-    src: url(/font/DVN-HaNoiPho.ttf);
+    src: url(https://raw.githubusercontent.com/Neikaliot/audio_tour/main/font/DVN-HaNoiPho.ttf) format('truetype');
 }
 .top{
     width:auto;
