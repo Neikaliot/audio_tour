@@ -12,7 +12,7 @@ html {
 }
 @font-face {
     font-family: lemonmilk;
-    src: url(/font/LEMONMILK-Light.otf);
+    src: url('https://raw.githubusercontent.com/Neikaliot/audio_tour/main/font/DVN-HaNoiPho.ttf') format('truetype');
 }
 @font-face {
     font-family: hanoipho;
