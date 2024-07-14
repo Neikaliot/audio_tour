@@ -116,6 +116,8 @@ nav ul :hover{
     border: none;
     border-radius: 1.5rem;
     transform: 0.2s ease-in-out;
+    font-family: 'lemonmilk';
+    
 }
 .herobutton a{
     color: grey;
@@ -541,7 +543,8 @@ nav ul :hover{
     background-color: #000000;
     color: white;
     padding: 20px 0;
-    
+    font-family: 'lemonmilk';
+    font-size: 0.75vw;
     position: relative;
     bottom: 0;
     width: 100%;
