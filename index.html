@@ -26,11 +26,11 @@
         </nav>
         <div class="top">
             <div class="hero-text">
-                <p class="logo">HA NOI</p>
+                <p class="logo">HANOI</p>
                 <p class="p2">______________________________</p>
-                <p class="dscrpt">Unveiling Hanoi at your own pace! Explore the vibrant capital of Vietnam with our free audio tour website. Immerse yourself in the rich history, bustling markets, and hidden gems of this captivating city. Listen to engaging commentary from local guides, all accessible right from your phone or device. Start your Hanoi adventure today!
+                <p class="dscrpt">Start your Hanoi adventure today!
                 </p>
-                <button class="herobutton"><a href="#areas">GET STARTED</a></button>
+                <button class="herobutton"><a href="#culture">GET STARTED</a></button>
             </div>
         </div>
         <!--<div class="background">
@@ -58,32 +58,37 @@
                 <h1 id="maptitle">Hanoi Map</h1>
                 <p id="line">_________________</p>
                 <div class="container">
-                    <div class="longbien district" id="longbienbox" onclick="showAlert()"></div>
+                    <div class="longbien district" id="longbienbox"></div>
                     <div class="popup-box" id="longbienpopup">Long Bien</div>
-                    <div class="caugiay district" id="caugiaybox" onclick="showAlert()"></div>
+                    <div class="caugiay district" id="caugiaybox"></div>
                     <div class="popup-box" id="caugiaypopup">Cau Giay</div>
-                    <div class="tayho district" id="tayhobox" onclick="showAlert()"></div>
+                    <div class="tayho district" id="tayhobox"></div>
                     <div class="popup-box" id="tayhopopup">Tay Ho</div>
-                    <div class="hadong district" id="hadongbox" onclick="showAlert()"></div>
+                    <div class="hadong district" id="hadongbox"></div>
                     <div class="popup-box" id="hadongpopup">Ha Dong</div>
-                    <div class="thanhxuan district" id="thanhxuanbox" onclick="showAlert()"></div>
+                    <div class="thanhxuan district" id="thanhxuanbox"></div>
                     <div class="popup-box" id="thanhxuanpopup">Thanh Xuan</div>
-                    <div class="haibatrung district" id="haibatrungbox" onclick="showAlert()"></div>
+                    <div class="haibatrung district" id="haibatrungbox"></div>
                     <div class="popup-box" id="haibatrungpopup">Hai Ba Trung</div>
-                    <div class="dongda district" id="dongdabox" onclick="showAlert()"></div>
+                    <div class="dongda district" id="dongdabox"></div>
                     <div class="popup-box" id="dongdapopup">Dong Da</div>
-                    <div class="badinh district" id="badinhbox" onclick="showAlert()"></div>
+                    <div class="badinh district" id="badinhbox"></div>
                     <div class="popup-box" id="badinhpopup">Ba Dinh</div>
-                    <div class="hoankiem district" id="hoankiembox" onclick="showAlert()"></div>
+                    <div class="hoankiem district" id="hoankiembox"></div>
                     <div class="popup-box" id="hoankiempopup">Hoan Kiem</div>
-                    <div class="hoangmai district" id="hoangmaibox" onclick="showAlert()"></div>
+                    <div class="hoangmai district" id="hoangmaibox"></div>
                     <div class="popup-box" id="hoangmaipopup">Hoang Mai</div>
-                    <div class="namtuliem district" id="namtuliembox" onclick="showAlert()"></div>
+                    <div class="namtuliem district" id="namtuliembox"></div>
                     <div class="popup-box" id="namtuliempopup">Nam Tu Liem</div>
-                    <div class="bactuliem district" id="bactuliembox" onclick="showAlert()"></div>
+                    <div class="bactuliem district" id="bactuliembox"></div>
                     <div class="popup-box" id="bactuliempopup">Bac Tu Liem</div>
                 </div>
-                <p id="howto">Hover over a district to see its name</p>
+                <div class="howto"><p id="howto">
+                    Explore Hanoi with our interactive map!
+                    Hover over a district to see its name,
+                    and click on it to dive deeper into its 
+                    characteristics and must-see attractions.</p>
+                </div>
             </div>
             
         </div>
@@ -94,9 +99,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
     <script>
-        function showAlert(){
-            alert('button clicked');
-        }
+        
         function showSidebar(){
             const sidebar=document.querySelector('.sidenav' )
             sidebar.style.display='flex'
@@ -156,8 +159,8 @@ pairs.forEach(pair => {
 
       box.addEventListener('mousemove', (event) => {
         const rect = document.querySelector('.container').getBoundingClientRect();
-        const x = event.clientX - rect.left + 10; // offset for better visibility
-        const y = event.clientY - rect.top + 10; // offset for better visibility
+        const x = event.clientX - rect.left + 10; 
+        const y = event.clientY - rect.top + 10; 
         popup.style.left = x + 'px';
         popup.style.top = y + 'px';
       });
