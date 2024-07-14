@@ -11,11 +11,11 @@ html {
     position: relative;
 }
 @font-face {
-    font-family: lemonmilk;
+    font-family: 'lemonmilk';
     src: url('https://raw.githubusercontent.com/Neikaliot/audio_tour/main/font/LEMONMILK-Light.otf') format('truetype');
 }
 @font-face {
-    font-family: hanoipho;
+    font-family: 'hanoipho';
     src: url('https://raw.githubusercontent.com/Neikaliot/audio_tour/main/font/DVN-HaNoiPho.ttf') format('truetype');
 }
 .top{
@@ -86,7 +86,7 @@ nav ul :hover{
     font-size: 8vw;
     font-weight: bold;
     color: white;
-    font-family: hanoipho;
+    font-family: 'hanoipho';
     letter-spacing: 1.2vw;
     
 }
@@ -105,7 +105,7 @@ nav ul :hover{
     color: lightgray;
     font-weight: 50;
     text-align: center;
-    font-family: lemonmilk;
+    font-family: 'lemonmilk';
 }
 
 .herobutton{
@@ -337,7 +337,7 @@ nav ul :hover{
 
 #maptitle {
     font-size: 3rem;
-    font-family: lemonmilk;
+    font-family: 'lemonmilk';
 }
 #line{
     color: black;
@@ -351,14 +351,14 @@ nav ul :hover{
 }
 #howto {
     font-size: 1rem;
-    font-family: lemonmilk;
+    font-family: 'lemonmilk';
     text-align: center;
     letter-spacing: 0.1vw;
 }
 
 .district {
     background-color: gray;
-    font-family: Arial, Helvetica, sans-serif;
+    
     font-size: 2.5vh;
     border: none;
     outline: none;
@@ -473,7 +473,7 @@ nav ul :hover{
     height: 30px;
     background-color: rgb(36, 36, 36);
     color: white;
-    font-family: lemonmilk;
+    font-family: 'lemonmilk';
     font-size: 0.8rem;
     border-radius: 3px;
     position: absolute;
