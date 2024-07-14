@@ -535,7 +535,7 @@ nav ul :hover{
     .hoangmai { width: 33.3333%; height: 50%; right: 21.6667%; bottom: 5.75%; }
     .namtuliem { width: 23.3333%; height: 35%; right: 59.5%; bottom: 35.25%; }
     .bactuliem { width: 26.6667%; height: 40%; right: 57.8333%; bottom: 58.25%; }
-    .popup-box { width: 11.6667%; height: 10%; }
+    .popup-box { width: 110px; height: 30px; }
 
 }
 
