@@ -521,7 +521,7 @@ nav ul :hover{
 }
 
 
-  @media(max-width:800px){
+@media(max-width:800px){
     .container { min-width: 90vw; height: 60vw; }
     .longbien { width: 30.8333%; height: 46.25%; right: 12.8333%; bottom: 38.625%; }
     .caugiay { width: 16.6667%; height: 25%; right: 53.25%; bottom: 44.5%; }
