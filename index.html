@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Audio Tour</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
@@ -26,11 +26,11 @@
         </nav>
         <div class="top">
             <div class="hero-text">
-                <p class="logo">HANOI</p>
-                <p class="p2">______________________________</p>
-                <p class="dscrpt">Start your Hanoi adventure today!
+                <p class="logo" id="logo">HANOI</p>
+                <p class="p2" id="p2">______________________________</p>
+                <p class="dscrpt" id="dscrpt">Start your Hanoi adventure today!
                 </p>
-                <button class="herobutton"><a href="#areas">GET STARTED</a></button>
+                <button class="herobutton" id="herobutton"><a href="#areas">GET STARTED</a></button>
             </div>
         </div>
         <!--<div class="background">
@@ -176,7 +176,26 @@ pairs.forEach(pair => {
             header.classList.toggle("sticky", window.scrollY > 0);
         })
     </script>
+    <script>
+        document.addEventListener('scroll', function() {
+            
+            const scrollPosition = window.scrollY;
 
+            
+            const newlogo = 10 - scrollPosition / 150 + 'rem';
+            const newp2 = 1.5 - scrollPosition / 1800 + 'rem';
+            const newp2padding = 2 - scrollPosition / 200 + 'vw';
+            const newdscrpt = 1 - scrollPosition / 2000 + 'rem';
+            const newherobutton = 0.8 - scrollPosition / 2100 + 'rem';
+
+            
+            document.getElementById('logo').style.fontSize = newlogo;
+            document.getElementById('p2').style.fontSize = newp2;
+            document.getElementById('p2').style.paddingBottom = newp2padding;
+            document.getElementById('dscrpt').style.fontSize = newdscrpt;
+            document.getElementById('herobutton').style.fontSize = newherobutton;
+        });
+    </script>
 
     <footer class="footer">
     <div class="footer-content">
