@@ -545,7 +545,7 @@ nav ul :hover{
     color: white;
     padding: 20px 0;
     font-family: 'lemonmilk';
-    font-size: 0.75vw;
+    font-size: 1rem;
     position: relative;
     bottom: 0;
     width: 100%;
