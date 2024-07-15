@@ -83,7 +83,7 @@ nav ul :hover{
     text-decoration: none;
 }
 .logo{
-    font-size: 8vw;
+    font-size: 10rem;
     font-weight: bold;
     color: white;
     font-family: 'hanoipho';
@@ -117,7 +117,7 @@ nav ul :hover{
     border-radius: 1.5rem;
     transform: 0.2s ease-in-out;
     font-family: 'lemonmilk';
-    
+    font-size: 0.8rem;
 }
 .herobutton a{
     color: grey;
@@ -273,7 +273,7 @@ nav ul :hover{
         background-color: transparent;
     }
     .hero-text .dscrpt{
-        width: 50vw;
+        text-align: center;
     }
     .p2 {
         display: none !important;
@@ -320,6 +320,7 @@ nav ul :hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2vw;
 }
 .container {
     min-width: 900px;
