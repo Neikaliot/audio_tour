@@ -284,11 +284,10 @@ nav ul :hover{
         width: 100vw;
     }
     .logo{
-        font-size: 6rem;
+        font-size: 10rem;
     }
     .p2{
-        color: transparent;
-        position: absolute;
+        display: none !important;
     }
 
 }
