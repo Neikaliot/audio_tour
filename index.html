@@ -62,7 +62,7 @@
                     <div class="popup-box" id="longbienpopup">Long Bien</div>
                     <div class="caugiay district" id="caugiaybox"></div>
                     <div class="popup-box" id="caugiaypopup">Cau Giay</div>
-                    <div class="tayho district" id="tayhobox"></div>
+                    <div class="tayho district" id="tayhobox" onclick="redirectLink('tayho.html')"></div>
                     <div class="popup-box" id="tayhopopup">Tay Ho</div>
                     <div class="hadong district" id="hadongbox"></div>
                     <div class="popup-box" id="hadongpopup">Ha Dong</div>
@@ -99,7 +99,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
     <script>
-        
+        function redirectLink(url) {
+            window.location.href = url;
+        }
+
         function showSidebar(){
             const sidebar=document.querySelector('.sidenav' )
             sidebar.style.display='flex'
