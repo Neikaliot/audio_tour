@@ -284,10 +284,11 @@ nav ul :hover{
         width: 100vw;
     }
     .logo{
-        font-size: 10rem;
+        font-size: 6rem;
     }
     .p2{
-        display: none !important;
+        color: transparent;
+        position: absolute;
     }
 
 }
@@ -544,7 +545,7 @@ nav ul :hover{
     color: white;
     padding: 20px 0;
     font-family: 'lemonmilk';
-    font-size: 1rem;
+    font-size: 0.75vw;
     position: relative;
     bottom: 0;
     width: 100%;
